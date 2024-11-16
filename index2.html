@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VK Friends Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #e7e8ea;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #4682b4;
+        color: white;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      header .logo {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      header .search-bar input {
+        width: 300px;
+        padding: 5px;
+        font-size: 14px;
+        border-radius: 3px;
+        border: none;
+      }
+      .container {
+        display: flex;
+        width: 1000px;
+        margin: 20px auto;
+      }
+      .sidebar {
+        width: 20%;
+        background-color: #f3f3f5;
+        padding: 20px;
+      }
+      .sidebar ul {
+        list-style: none;
+        padding: 0;
+      }
+      .sidebar ul li {
+        margin: 10px 0;
+      }
+      .sidebar ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+      }
+      .content {
+        width: 60%;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .friends-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .friends-header button {
+        padding: 5px 10px;
+        background-color: #4682b4;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      .friends-list {
+        margin-top: 20px;
+      }
+      .friend {
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #e7e8ea;
+      }
+      .friend img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 15px;
+      }
+      .friend-details {
+        flex-grow: 1;
+      }
+      .friend-details p {
+        margin: 0;
+      }
+      .right-section {
+        width: 20%;
+        padding: 20px;
+      }
+      .right-section .block {
+        background-color: white;
+        padding: 15px;
+        margin-bottom: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .right-section .block h3 {
+        margin-top: 0;
+      }
+      .possible-friend {
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+      }
+      .possible-friend img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+      .possible-friend-details p {
+        margin: 0;
+      }
+      .possible-friend-details a {
+        font-size: 12px;
+        color: #4682b4;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">VK</div>
+      <div class="search-bar">
+        <input type="text" placeholder="Поиск" />
+      </div>
+    </header>
+    <div class="container">
+      <div class="sidebar">
+        <ul>
+          <li><a href="index.html">Моя страница</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Сообщения</a></li>
+          <li><a href="#">Друзья</a></li>
+          <li><a href="#">Группы</a></li>
+          <li><a href="#">Фотографии</a></li>
+          <li><a href="#">Музыка</a></li>
+          <li><a href="#">Видео</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="friends-header">
+          <div>
+            <button>Все друзья 1331</button>
+            <button>Друзья онлайн 54</button>
+          </div>
+          <button>Найти друзей</button>
+        </div>
+        <div class="friends-list">
+          <div class="friend">
+            <img src="https://via.placeholder.com/50" alt="Friend" />
+            <div class="friend-details">
+              <p><strong>Елдар Хасен</strong></p>
+              <p>Написать сообщение</p>
+            </div>
+          </div>
+          <div class="friend">
+            <img src="https://via.placeholder.com/50" alt="Friend" />
+            <div class="friend-details">
+              <p><strong>Аня Мухамеджанова</strong></p>
+              <p>Написать сообщение</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-section">
+        <div class="block">
+          <h3>Мои друзья</h3>
+          <ul>
+            <li>Заявки в друзья</li>
+            <li>Телефонная книга</li>
+            <li>Новые друзья</li>
+            <li>Поиск друзей</li>
+            <li>Списки друзей</li>
+          </ul>
+        </div>
+        <div class="block">
+          <h3>Возможные друзья</h3>
+          <div class="possible-friend">
+            <img src="https://via.placeholder.com/40" alt="Friend" />
+            <div class="possible-friend-details">
+              <p>Баглан Абдрасил</p>
+              <a href="#">Добавить в друзья</a>
+            </div>
+          </div>
+          <div class="possible-friend">
+            <img src="https://via.placeholder.com/40" alt="Friend" />
+            <div class="possible-friend-details">
+              <p>Ерасыл Жанатов</p>
+              <a href="#">Добавить в друзья</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

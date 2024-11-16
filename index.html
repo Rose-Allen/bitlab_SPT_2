@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VK Profile</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #e7e8ea;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #4682b4;
+        color: white;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      header .logo {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      header .search-bar {
+        flex-grow: 1;
+        margin: 0 20px;
+      }
+      header .search-bar input {
+        width: 100%;
+        padding: 5px;
+        font-size: 16px;
+        border-radius: 3px;
+        border: none;
+      }
+      header .user-options {
+        display: flex;
+        align-items: center;
+      }
+      header .user-options a {
+        color: white;
+        text-decoration: none;
+        margin-left: 15px;
+        font-size: 14px;
+      }
+      .container {
+        width: 1000px;
+        margin: 20px auto;
+        display: flex;
+      }
+      .sidebar {
+        width: 20%;
+        background-color: #f3f3f5;
+        padding: 20px;
+      }
+      .content {
+        width: 80%;
+        background-color: #ffffff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .sidebar ul {
+        list-style: none;
+        padding: 0;
+      }
+      .sidebar ul li {
+        margin: 10px 0;
+      }
+      .sidebar ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+      }
+      .profile-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .profile-info {
+        width: 70%;
+      }
+      .profile-info h1 {
+        margin: 0;
+        font-size: 24px;
+      }
+      .profile-info p {
+        margin: 5px 0;
+        color: #555;
+      }
+      .profile-photo img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      .stats {
+        display: flex;
+        margin: 20px 0;
+      }
+      .stats div {
+        margin-right: 20px;
+      }
+      .friends-section,
+      .photos-section,
+      .post-section {
+        margin-top: 20px;
+      }
+      .friends-list img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+      .photos-grid img {
+        width: 100px;
+        height: 100px;
+        margin: 5px;
+        object-fit: cover;
+      }
+      .post {
+        margin-top: 20px;
+      }
+      .post p {
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">VK</div>
+      <div class="search-bar">
+        <input type="text" placeholder="Поиск" />
+      </div>
+      <div class="user-options">
+        <a href="#">Моя страница</a>
+        <a href="#">Сообщения</a>
+        <a href="#">Уведомления</a>
+      </div>
+    </header>
+    <div class="container">
+      <div class="sidebar">
+        <ul>
+          <li><a href="#">Моя страница</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Сообщения</a></li>
+          <li><a href="index2.html">Друзья</a></li>
+          <li><a href="#">Группы</a></li>
+          <li><a href="#">Фотографии</a></li>
+          <li><a href="#">Музыка</a></li>
+          <li><a href="#">Видео</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="profile-header">
+          <div class="profile-info">
+            <h1>Ilyas Zhuanyshev</h1>
+            <p>Life is good :)</p>
+            <p>Дата рождения: 26 мая 1989 г.</p>
+            <p>Город: Алматы</p>
+            <p>Семейное положение: женат</p>
+            <p>Место работы: BITLAB Academy</p>
+            <p>
+              Веб-сайт:
+              <a href="http://www.zhuanyshev.kz">http://www.zhuanyshev.kz</a>
+            </p>
+          </div>
+          <div class="profile-photo">
+            <img src="https://via.placeholder.com/150" alt="Profile Photo" />
+          </div>
+        </div>
+        <div class="stats">
+          <div><strong>1331</strong> друзья</div>
+          <div><strong>224</strong> подписчика</div>
+          <div><strong>95</strong> фотографии</div>
+          <div><strong>969</strong> видеозаписи</div>
+          <div><strong>809</strong> аудиозаписи</div>
+          <div><strong>140</strong> страницы</div>
+        </div>
+        <div class="friends-section">
+          <h2>Друзья</h2>
+          <div class="friends-list">
+            <img src="https://via.placeholder.com/50" alt="Friend" />
+            <img src="https://via.placeholder.com/50" alt="Friend" />
+            <img src="https://via.placeholder.com/50" alt="Friend" />
+            <img src="https://via.placeholder.com/50" alt="Friend" />
+          </div>
+        </div>
+        <div class="photos-section">
+          <h2>Мои фотографии</h2>
+          <div class="photos-grid">
+            <img src="https://via.placeholder.com/100" alt="Photo" />
+            <img src="https://via.placeholder.com/100" alt="Photo" />
+            <img src="https://via.placeholder.com/100" alt="Photo" />
+            <img src="https://via.placeholder.com/100" alt="Photo" />
+          </div>
+        </div>
+        <div class="post-section">
+          <h2>Последняя запись</h2>
+          <div class="post">
+            <p>
+              Выдержка из интервью Льюиса Хэмилтона и Тото Вольффа: Вопрос:
+              Себастьян долго ехал за вами — вы ожидали подобного? Льюис
+              Хэмилтон: Да, Себастьян был очень близко...
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
